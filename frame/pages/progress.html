@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>select</title>
+    <link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/pages.css">
+	<script src="../js/lib/jquery.min.js"></script>
+	<script src="../js/plugins.js"></script>
+</head>
+<body>
+	<div class="page-title">进度条</div>
+	<div id="prog"></div>
+	<div id="test"></div>
+<script>
+	$(function(){
+		var opt1={value:'50%'};
+		$('#prog').progress(opt1);
+		var opts={label:'标题',value:'10%',color:'#31a9f5'};
+		$('#test').progress(opts);
+	});
+	
+</script>
+
+</body>
+</html>

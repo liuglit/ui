@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>notification</title>
+    <link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/pages.css">
+	<script src="../js/lib/jquery.min.js"></script>
+	<script src="../js/plugins.js"></script>
+</head>
+<body>
+	<div class="page-title">对话框</div>
+	<div class="padding-bottom items">
+		<a class="btn blue-btn" href="javascript:;" id="show">打开对话框</a>
+		
+	</div>
+	
+	<!-- dialog -->
+	
+	<div id="test" class="hide">
+		<table class="table">
+		<thead>
+			<tr>
+				<th>名称</th><th>服务</th><th>更新时间</th><th>状态</th><th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>大数据内容服务沉淀库</td>
+				<td>MySQL</td>
+				<td>2020-06-15 10:33:52</td>
+				<td><span class="status-icon ok"></span></td>
+				<td>
+					<a class="link" href="javascript:;">查看</a><a class="link" href="javascript:;">停止</a>
+				</td>
+			</tr>
+			</tbody>
+			</table>
+			<div class="margin-top">
+				<a class="right btn green-btn" href="javascript:;" id="hide">关闭对话框</a>
+			</div>
+	</div>
+	
+<script>
+	$(function(){
+		$('#show').click(function(){
+			$('#test').dialog({title:'标题'});
+		});
+		$('#hide').click(function(){
+			$('#test').dialog({close:true});
+		});
+	});
+	
+</script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>Radio</title>
+    <link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/pages.css">
+	<script src="../js/lib/jquery.min.js"></script>
+</head>
+<body>
+	<div class="page-title">单选框</div>
+	<div class="padding-bottom items">
+		<span class="radio"><i></i>选项一</span>
+		<span class="radio"><i></i>选项二</span>
+		<span class="radio"><i></i>选项三</span>
+	</div>
+	
+<script>
+	$(function(){
+		$('.items').find('span.radio').click(function(){
+			$(this).addClass('on').siblings('span.radio').removeClass('on');
+		});
+	});
+	
+</script>
+
+</body>
+</html>

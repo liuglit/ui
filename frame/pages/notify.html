@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>notification</title>
+    <link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/pages.css">
+	<script src="../js/lib/jquery.min.js"></script>
+	<script src="../js/func.js"></script>
+</head>
+<body>
+	<div class="page-title">信息提示框</div>
+	<div class="padding-bottom items">
+		<a class="btn blue-btn" href="javascript:;" id="tip">信息提示</a>
+		<a class="btn blue-btn" href="javascript:;" id="notify">信息提示弹出</a>
+	</div>
+	
+<script>
+	$(function(){
+		$('#tip').click(function(){
+			func.tip('hi, there.');
+		});
+		$('#notify').click(function(){
+			func.notify.alert('hello, you.');
+		});
+	});
+	
+</script>
+
+</body>
+</html>

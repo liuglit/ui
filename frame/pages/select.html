@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <title>select</title>
+    <link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/pages.css">
+	<script src="../js/lib/jquery.min.js"></script>
+	<script src="../js/plugins.js"></script>
+</head>
+<body>
+	<div class="page-title">下拉选择框</div>
+	<div id="select"></div>
+	<div id="test"></div>
+<script>
+	$(function(){
+		var options={list:[{value:'01',label:'选项一'},
+		                   {value:'02',label:'选项二'},
+		                   {value:'03',label:'选项三'}]};
+		$('#select').select(options);
+		
+		var opt={label:'请选择一项',
+				list:[{value:'01',label:'第一个'},
+		                   {value:'02',label:'第二个'},
+		                   {value:'03',label:'第三个'}]};
+		$('#test').select(opt);
+	});
+	
+</script>
+
+</body>
+</html>
